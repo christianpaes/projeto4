@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalPage } from '../modal/modal.page';
+import { MediaPage } from '../media/media.page';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,12 @@ export class HomePage {
     return await modal.present();
   }
 
+  async openmedia(){
+    const modal = await this.modalController.create({
+      component: MediaPage
+    });
+    return await modal.present();
+  }
   }
 
 

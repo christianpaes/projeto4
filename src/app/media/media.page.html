@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>media</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label>Sua primeira nota</ion-label>
+  <ion-input [(ngModel)]="nota1" type="number"></ion-input>
+
+
+    <ion-label>Sua segunda nota</ion-label>
+    <ion-input type="number" [(ngModel)]="nota2"></ion-input>
+
+    <ion-label>Sua terceira nota</ion-label>
+    <ion-input type="number" [(ngModel)]="nota3"></ion-input>
+
+<ion-button (click)="enviadados()" expand="full" color="primary"> Calcular</ion-button>  
+  
+<ion-button color="secondary" expand="full"  (click)="closeMedia()">
+  Fechar
+  </ion-button>
+
+
+
+</ion-content>
